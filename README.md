@@ -5,15 +5,15 @@ Homebrew tap for [Trapps](https://github.com/GregTheGreek/trapps).
 ## Install
 
 ```sh
-brew install --cask gregthegreek/tap/trapps
-```
-
-Or tap first, then install:
-
-```sh
 brew tap gregthegreek/tap
+brew trust gregthegreek/tap   # newer Homebrew requires trusting third-party taps before install
 brew install --cask trapps
 ```
+
+`brew trust` is a one-time, per-machine acknowledgement that you trust this
+tap. Recent Homebrew refuses to run casks from third-party taps until you run
+it (`Error: Refusing to load cask ... from untrusted tap`); it is not a sign
+anything is wrong. See [Tap Trust](https://docs.brew.sh/Tap-Trust).
 
 ## Casks
 
